@@ -33,7 +33,7 @@ Dự án phù hợp với sinh viên hoặc người mới học Flutter muốn 
 | **provider**       | Quản lý trạng thái ứng dụng |
 | **path_provider** | Lấy đường dẫn nơi lưu database |
 | **path**          | Hỗ trợ xử lý đường dẫn |
-| **intl**          | Format ngày tháng (dd/MM/yyyy HH:mm) |
+| **intl**          | Format ngày tháng  |
 | **cupertino_icons** | Icon hệ thống |
 
 ---
