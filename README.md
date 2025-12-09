@@ -1,104 +1,102 @@
-# 📘 Flutter Note App  
-***Sinh viên: Đặng Minh Khôi - Để xác nhận là em tự làm thì em sẽ đánh dấu chủ quyền để chứng minh ạ
-Ứng dụng ghi chú sử dụng Flutter – SQLite – Provider**
-# 📸 Ảnh xác nhận chủ quyền
+# 📝 Flutter Notes Application  
+### **Sinh viên thực hiện: Đặng Minh Khôi**  
+> *Để chứng minh bài tập được tự tay thực hiện, em có đính kèm ảnh đánh dấu chủ quyền bên dưới.*
 
-> Đây là ảnh dùng để đánh dấu bài làm do **tự bản thân thực hiện**.
+---
+
+## 📸 Xác nhận sở hữu bài làm
+
+> Ảnh minh họa nhằm xác nhận đây là sản phẩm do chính em hoàn thiện.
 
 ![chu_quyen](images/chu_quyen.jpg)
 
 ---
 
+# 📚 Giới thiệu dự án
 
-
-## 📌 Mục đích dự án
-
-Dự án được xây dựng nhằm minh họa việc lưu trữ dữ liệu cục bộ bằng SQLite và quản lý trạng thái bằng Provider trong Flutter.  
-Ứng dụng nhỏ gọn nhưng đầy đủ CRUD, phù hợp cho người mới học hoặc dùng làm template cá nhân.
+Ứng dụng **Flutter Notes** là một sản phẩm mẫu giúp người học làm quen với cách tổ chức dữ liệu cục bộ bằng SQLite, kết hợp quản lý trạng thái thông qua Provider.  
+Dự án phù hợp cho sinh viên, người mới bắt đầu và cả những ai muốn xây dựng ứng dụng ghi chú cá nhân đơn giản nhưng hiệu quả.
 
 ---
 
-## ✨ Tính năng chính
+# 🌟 Chức năng nổi bật
 
-📝 Thêm ghi chú mới gồm tiêu đề, nội dung và thời gian tạo tự động.  
-📚 Hiển thị danh sách ghi chú theo thứ tự cập nhật mới → cũ.  
-🛠 Chỉnh sửa nội dung ghi chú.  
-🗑️ Xóa ghi chú kèm hộp thoại xác nhận tránh thao tác nhầm.  
-💽 Lưu dữ liệu cục bộ bằng SQLite.  
-🔄 Giao diện tự cập nhật khi dữ liệu thay đổi nhờ Provider.
-
----
-
-## 🧰 Thư viện sử dụng
-
-• sqflite – Làm việc với cơ sở dữ liệu SQLite  
-• provider – Quản lý trạng thái reactive  
-• path_provider – Lấy đường dẫn lưu database  
-• path – Hỗ trợ xử lý đường dẫn  
-• intl – Format ngày giờ  
-• cupertino_icons – Icon phong cách iOS  
+- **Tạo ghi chú nhanh chóng** với tiêu đề + nội dung + thời gian tạo tự động.  
+- **Danh sách ghi chú thông minh**: sắp xếp theo thời điểm chỉnh sửa gần nhất.  
+- **Giao diện chỉnh sửa riêng**, dễ sử dụng và trực quan.  
+- **Xóa ghi chú có xác nhận**, hạn chế thao tác nhầm.  
+- **Dữ liệu lưu vĩnh viễn** nhờ SQLite — tắt app vẫn còn.  
+- **Tự động cập nhật giao diện** mỗi khi dữ liệu có thay đổi (Provider lắng nghe state).
 
 ---
 
-## 📁 Cấu trúc thư mục
+# 🛠 Công nghệ & package được sử dụng
+
+- **sqflite** – xử lý CRUD SQLite  
+- **provider** – quản lý trạng thái theo mô hình lắng nghe–thay đổi  
+- **path_provider** – truy vấn thư mục lưu trữ database  
+- **path** – hỗ trợ xử lý đường dẫn  
+- **intl** – format ngày giờ hiển thị  
+- **cupertino_icons** – icon giao diện iOS  
+
+---
+
+# 📁 Cây thư mục của dự án
 
 ```
 lib/
-├── main.dart                     
+│── main.dart
+│
 ├── models/
-│   └── note.dart                 
+│   └── note.dart
+│
 ├── database/
-│   └── db_helper.dart            
+│   └── db_helper.dart
+│
 ├── providers/
-│   └── note_provider.dart       
+│   └── note_provider.dart
+│
 ├── screens/
-│   ├── home_page.dart            
-│   └── note_editor_screen.dart   
+│   ├── home_page.dart
+│   └── note_editor_screen.dart
+│
 └── widgets/
-    └── note_card.dart            
+    └── note_card.dart
 ```
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & chạy
+# 🚀 Cách chạy dự án
 
 ```bash
-# 1. Tạo project hoặc giải nén source
-Flutter create week5_exercise
-
-# 2. Vào thư mục dự án
-cd week5_exercise
-
-# 3. Tải gói
 flutter pub get
-
-# 4. Chạy app
 flutter run
 ```
 
 ---
 
-## 📸 Ảnh chụp màn hình
+# 🖼️ Hình ảnh giao diện ứng dụng
 
-| Màn hình chính | Tạo ghi chú |
-|----------------|-------------|
-| ![Home](images/home.png) | ![Add](images/new_note.png) |
+### **Trang danh sách ghi chú – Trang tạo mới**
+| Home | New Note |
+|------|----------|
+| ![Home](images/home.png) | ![New](images/new_note.png) |
 
-| Chỉnh sửa | Xóa |
-|----------|------|
+### **Trang chỉnh sửa – Popup xác nhận xóa**
+| Edit | Delete |
+|------|--------|
 | ![Edit](images/edit_note.png) | ![Delete](images/delete_note.png) |
 
 ---
 
-## ✅ Mức độ hoàn thành
+# ✅ Tiến độ và yêu cầu đã hoàn thành
 
-• SQLite + sqflite: ✔ Hoàn thành  
-• Provider: ✔ Hoàn thành  
-• CRUD đầy đủ: ✔ Hoàn thành  
-• Timestamp: ✔ Hoàn thành  
-• Xác nhận trước khi xóa: ✔ Hoàn thành  
-• Lưu dữ liệu cục bộ: ✔ Hoàn thành  
+- Tích hợp SQLite bằng sqflite → **Hoàn thành**  
+- Provider quản lý trạng thái → **Hoàn thành**  
+- CRUD đầy đủ (Create–Read–Update–Delete) → **Hoàn thành**  
+- Lưu thời gian tạo & cập nhật → **Hoàn thành**  
+- Xác nhận trước khi xóa → **Hoàn thành**  
+- Lưu trữ dữ liệu bền vững → **Hoàn thành**
 
 ---
-
 
