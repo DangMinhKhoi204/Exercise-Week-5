@@ -1,44 +1,46 @@
-# Flutter Note App  
-**Ứng dụng ghi chú sử dụng Flutter – SQLite – Provider**
+# 📘 Flutter Note App  
+***Sinh viên: Đặng Minh Khôi - Để xác nhận là em tự làm thì em sẽ đánh dấu chủ quyền để chứng minh ạ
+Ứng dụng ghi chú sử dụng Flutter – SQLite – Provider**
+# 📸 Ảnh xác nhận chủ quyền
+
+> Đây là ảnh dùng để đánh dấu bài làm do **tự bản thân thực hiện**.
+
+![chu_quyen](images/chu_quyen.jpg)
 
 ---
 
+
+
 ## 📌 Mục đích dự án
 
-Dự án này được xây dựng nhằm minh họa cách lưu trữ dữ liệu cục bộ bằng SQLite và quản lý trạng thái bằng Provider trong Flutter.
-Ứng dụng nhỏ gọn nhưng đầy đủ tính năng CRUD, phù hợp cho người mới học hoặc dùng làm template cho các app cá nhân.
+Dự án được xây dựng nhằm minh họa việc lưu trữ dữ liệu cục bộ bằng SQLite và quản lý trạng thái bằng Provider trong Flutter.  
+Ứng dụng nhỏ gọn nhưng đầy đủ CRUD, phù hợp cho người mới học hoặc dùng làm template cá nhân.
 
 ---
 
 ## ✨ Tính năng chính
 
-📝 Thêm ghi chú mới gồm tiêu đề, nội dung và thời gian tạo tự động.
-
-📚 Hiển thị danh sách ghi chú theo thứ tự cập nhật mới → cũ.
-
-🛠 Chỉnh sửa thông tin ghi chú ngay trong giao diện riêng.
-
-🗑️ Xóa ghi chú kèm hộp thoại xác nhận, tránh thao tác sai.
-
-💽 Lưu trữ local bằng SQLite, dữ liệu không bị mất khi tắt app.
-
-🔄 Tự động cập nhật giao diện khi dữ liệu thay đổi nhờ Provider.
+📝 Thêm ghi chú mới gồm tiêu đề, nội dung và thời gian tạo tự động.  
+📚 Hiển thị danh sách ghi chú theo thứ tự cập nhật mới → cũ.  
+🛠 Chỉnh sửa nội dung ghi chú.  
+🗑️ Xóa ghi chú kèm hộp thoại xác nhận tránh thao tác nhầm.  
+💽 Lưu dữ liệu cục bộ bằng SQLite.  
+🔄 Giao diện tự cập nhật khi dữ liệu thay đổi nhờ Provider.
 
 ---
 
 ## 🧰 Thư viện sử dụng
 
-• sqflite – Thư viện làm việc với cơ sở dữ liệu SQLite trong Flutter  
-• provider – Quản lý trạng thái theo mô hình reactive  
-• path_provider – Lấy đường dẫn thư mục lưu trữ dữ liệu (database)  
-• path – Hỗ trợ thao tác xử lý và nối đường dẫn  
-• intl – Format ngày giờ, chuyển đổi kiểu hiển thị thời gian  
-• cupertino_icons – Bộ icon phong cách iOS dùng trong ứng dụng  
+• sqflite – Làm việc với cơ sở dữ liệu SQLite  
+• provider – Quản lý trạng thái reactive  
+• path_provider – Lấy đường dẫn lưu database  
+• path – Hỗ trợ xử lý đường dẫn  
+• intl – Format ngày giờ  
+• cupertino_icons – Icon phong cách iOS  
 
 ---
 
 ## 📁 Cấu trúc thư mục
-
 
 ```
 lib/
@@ -58,40 +60,51 @@ lib/
 
 ---
 
-### Hướng dẫn cài đặt & chạy
+## 🚀 Hướng dẫn cài đặt & chạy
 
-#### Các bước thực hiện
 ```bash
-# 1. Clone hoặc giải nén source code
-Fluter create week5_exercise
+# 1. Tạo project hoặc giải nén source
+Flutter create week5_exercise
+
 # 2. Vào thư mục dự án
 cd week5_exercise
-# 3. Lấy dependencies
+
+# 3. Tải gói
 flutter pub get
-# 4. Chạy ứng dụng
+
+# 4. Chạy app
 flutter run
 ```
 
 ---
 
-###  Ảnh chụp màn hình 
-| Màn hình chính           | Tạo ghi chú mới             |
-|--------------------------|-----------------------------|
+## 📸 Ảnh chụp màn hình
+
+| Màn hình chính | Tạo ghi chú |
+|----------------|-------------|
 | ![Home](images/home.png) | ![Add](images/new_note.png) |
 
-
-| Chỉnh sửa                     | Xác nhận xóa                      |
-|-------------------------------|-----------------------------------|
+| Chỉnh sửa | Xóa |
+|----------|------|
 | ![Edit](images/edit_note.png) | ![Delete](images/delete_note.png) |
+
 ---
 
-### ✅ Mức độ hoàn thành yêu cầu
+## ✅ Mức độ hoàn thành
 
 • SQLite + sqflite: ✔ Hoàn thành  
-• Provider (state management): ✔ Hoàn thành  
-• Chức năng CRUD đầy đủ: ✔ Hoàn thành  
-• Timestamp (createdAt, updatedAt): ✔ Hoàn thành  
+• Provider: ✔ Hoàn thành  
+• CRUD đầy đủ: ✔ Hoàn thành  
+• Timestamp: ✔ Hoàn thành  
 • Xác nhận trước khi xóa: ✔ Hoàn thành  
-• Lưu dữ liệu local sau khi thoát ứng dụng: ✔ Hoàn thành  
+• Lưu dữ liệu cục bộ: ✔ Hoàn thành  
+
+---
+
+# 📸 Ảnh xác nhận chủ quyền
+
+> Đây là ảnh dùng để đánh dấu bài làm do **tự bản thân thực hiện**.
+
+![chu_quyen](images/chu_quyen.jpg)
 
 ---
