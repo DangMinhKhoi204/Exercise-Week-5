@@ -3,38 +3,37 @@
 
 ---
 
-## 📝 Giới thiệu
+## 📌 Mục đích dự án
 
-Flutter Note App là ứng dụng ghi chú đơn giản, nhẹ và nhanh, được xây dựng để thực hành quản lý trạng thái và lưu trữ dữ liệu cục bộ trong Flutter.  
-Ứng dụng áp dụng mô hình **Provider + SQLite**, kết hợp **Singleton Database Helper**, và triển khai đầy đủ các chức năng CRUD.
-
-Dự án phù hợp với sinh viên hoặc người mới học Flutter muốn làm quen với database local và state management.
+Dự án này được xây dựng nhằm minh họa cách lưu trữ dữ liệu cục bộ bằng SQLite và quản lý trạng thái bằng Provider trong Flutter.
+Ứng dụng nhỏ gọn nhưng đầy đủ tính năng CRUD, phù hợp cho người mới học hoặc dùng làm template cho các app cá nhân.
 
 ---
 
-## 🚀 Chức năng nổi bật
+## ✨ Tính năng chính
 
-| Tính năng              | Mô tả |
-|------------------------|-------|
-| ➕ Thêm ghi chú         | Tạo ghi chú mới gồm tiêu đề và nội dung, tự động thêm thời gian tạo |
-| 📋 Danh sách ghi chú   | Hiển thị toàn bộ ghi chú, sắp xếp theo thời gian cập nhật gần nhất |
-| ✏️ Chỉnh sửa ghi chú    | Chạm vào ghi chú → chuyển đến editor → lưu thay đổi |
-| 🗑 Xóa ghi chú          | Có popup xác nhận để tránh thao tác nhầm |
-| 💾 Lưu trữ vĩnh viễn    | Ghi chú được lưu trong SQLite, dữ liệu không bị mất khi thoát app |
-| 🔄 Cập nhật UI tự động | Provider đảm bảo giao diện cập nhật realtime khi dữ liệu thay đổi |
+📝 Thêm ghi chú mới gồm tiêu đề, nội dung và thời gian tạo tự động.
+
+📚 Hiển thị danh sách ghi chú theo thứ tự cập nhật mới → cũ.
+
+🛠 Chỉnh sửa thông tin ghi chú ngay trong giao diện riêng.
+
+🗑️ Xóa ghi chú kèm hộp thoại xác nhận, tránh thao tác sai.
+
+💽 Lưu trữ local bằng SQLite, dữ liệu không bị mất khi tắt app.
+
+🔄 Tự động cập nhật giao diện khi dữ liệu thay đổi nhờ Provider.
 
 ---
 
-## 🧩 Công nghệ sử dụng
+## 🧰 Thư viện sử dụng
 
-| Gói               | Vai trò |
-|-------------------|---------|
-| **sqflite**       | Cơ sở dữ liệu SQLite |
-| **provider**       | Quản lý trạng thái ứng dụng |
-| **path_provider** | Lấy đường dẫn nơi lưu database |
-| **path**          | Hỗ trợ xử lý đường dẫn |
-| **intl**          | Format ngày tháng  |
-| **cupertino_icons** | Icon hệ thống |
+• sqflite – Thư viện làm việc với cơ sở dữ liệu SQLite trong Flutter  
+• provider – Quản lý trạng thái theo mô hình reactive  
+• path_provider – Lấy đường dẫn thư mục lưu trữ dữ liệu (database)  
+• path – Hỗ trợ thao tác xử lý và nối đường dẫn  
+• intl – Format ngày giờ, chuyển đổi kiểu hiển thị thời gian  
+• cupertino_icons – Bộ icon phong cách iOS dùng trong ứng dụng  
 
 ---
 
@@ -88,12 +87,11 @@ flutter run
 
 ### ✅ Mức độ hoàn thành yêu cầu
 
-| Yêu cầu                               | Trạng thái thực hiện |
-|---------------------------------------|----------------------|
-| SQLite + sqflite                      | ✔ Hoàn thành         |
-| Provider quản lý trạng thái           | ✔ Hoàn thành         |
-| CRUD đầy đủ                           | ✔ Hoàn thành         |
-| Timestamp (createdAt, updatedAt)      | ✔ Hoàn thành         |
-| Xác nhận trước khi xóa                | ✔ Hoàn thành         |
-| Lưu dữ liệu sau khi thoát ứng dụng    | ✔ Hoàn thành         |
+• SQLite + sqflite: ✔ Hoàn thành  
+• Provider (state management): ✔ Hoàn thành  
+• Chức năng CRUD đầy đủ: ✔ Hoàn thành  
+• Timestamp (createdAt, updatedAt): ✔ Hoàn thành  
+• Xác nhận trước khi xóa: ✔ Hoàn thành  
+• Lưu dữ liệu local sau khi thoát ứng dụng: ✔ Hoàn thành  
+
 ---
