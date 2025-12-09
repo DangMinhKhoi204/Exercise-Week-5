@@ -8,7 +8,7 @@
 
 > Ảnh minh họa nhằm xác nhận đây là sản phẩm do chính em hoàn thiện.
 
-![chu_quyen](images/chu_quyen.jpg)
+![chu_quyen](images/chu_quyen1.jpg)
 
 ---
 
