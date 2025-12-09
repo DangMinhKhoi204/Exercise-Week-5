@@ -101,10 +101,4 @@ flutter run
 
 ---
 
-# 📸 Ảnh xác nhận chủ quyền
 
-> Đây là ảnh dùng để đánh dấu bài làm do **tự bản thân thực hiện**.
-
-![chu_quyen](images/chu_quyen.jpg)
-
----
